@@ -92,9 +92,9 @@ public class StageResults {
         else if (overallAverage < 50)
             degree = "3rd";
         else if (overallAverage < 60)
-            degree = "2.2";
+            degree = "Upper 2nd";
         else if (overallAverage < 70)
-            degree = "2.1";
+            degree = "Upper 2nd";
         else
             degree = "1st";
         

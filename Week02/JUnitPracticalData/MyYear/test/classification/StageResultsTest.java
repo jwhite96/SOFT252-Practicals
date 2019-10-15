@@ -197,4 +197,26 @@ public class StageResultsTest {
          assertEquals("120 credits, mark = " + stage2[count], expResult2[count], full.predictClass());         
         }             
     }    
+    
+    @Test
+    public void testFullOperation()
+    {
+        int[] credits = {10, 10, 10, 20, 20, 40, 10};
+        
+        double[] marks = {60.6, 44.45, 80.0, 56.99, 62.3, 68.4, 59.11};
+        double stage2 = 61.2;
+        
+        StageResults finalTest = new StageResults();
+        
+        // Add in the module marks and set the stage 2 average
+        for (int count = 0; count < credits.length; count ++)
+        finalTest.addModuleMark(credits[count], marks[count]);
+        finalTest.setStage2Average(stage2);
+    
+        // Test the results
+        assertEquals("stage 3 average", 63.03,
+        finalTest.calculateAverageSoFar(), 0.0);
+        assertEquals("predicted class", "Upper 2nd",
+        finalTest.predictClass());        
+    }    
 }
