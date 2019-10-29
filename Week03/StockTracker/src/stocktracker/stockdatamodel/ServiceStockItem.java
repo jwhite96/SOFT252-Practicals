@@ -2,18 +2,20 @@ package stocktracker.stockdatamodel;
 
 public class ServiceStockItem extends StockItem {
       
+    public ServiceStockItem(){
+        super();
+    }
+    
     public ServiceStockItem(String name){
-        this.name = name;
+        super(name);
     }
     
     public ServiceStockItem(String name, Integer qty){
-        this.name = name;
-        this.quantityInStock = qty;
-    }
-
-    @Override
-    public Boolean isInStock() {
-        return true;
+        super(name, 0);
     }   
     
+    @Override
+    public StockType getItemType(){
+        return StockType.SERVICEITEM;
+    }
 }

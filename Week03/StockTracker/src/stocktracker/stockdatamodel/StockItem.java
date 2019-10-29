@@ -1,11 +1,18 @@
 package stocktracker.stockdatamodel;
+import utilities.IObserver;
+import utilities.ISubject;
+/**
+* Super class from which specialised stock item classes will inherit
+* @author jwhite12
+*/
 
-public class StockItem {
+public abstract class StockItem implements ISubject {
     
     protected String name = "UNKNOWN";
     protected Integer quantityInStock = 0;
     protected Double sellingPrice = 1000000.00;
     protected Double costPrice = 1000000.00;
+    private ArrayList<IObserver> obervers = null;
 
     public String getName() {
         return name;
@@ -55,4 +62,30 @@ public class StockItem {
         return inStock;
     }
     
+    public StockItem(){
+        
+    }
+    
+    public StockItem(String name){
+        this.name = name;
+    }
+    
+    public StockItem(String name, Integer qty){
+        this.name = name;
+        this.quantityInStock = qty;
+    }
+    
+    public abstract StockType getItemType(); 
+    
+    @Override
+    public Boolean registerObserver(IObserver o){        
+    }
+    
+    @Override
+    public Boolean removeObserver(IObserver o){                
+    }
+    
+    @Override
+    public void notifyObservers(){        
+    }
 }
