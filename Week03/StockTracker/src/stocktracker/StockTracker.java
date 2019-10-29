@@ -26,9 +26,7 @@ public class StockTracker {
             System.out.println("Item 3 is a PHYSICAL stock item");
         } else {
             System.out.println("Item 3 is a SERVICE stock item");
-        }    
-                      
-        
+        }                     
         
     }
 }
