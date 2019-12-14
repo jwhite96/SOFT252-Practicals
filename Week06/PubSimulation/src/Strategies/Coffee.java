@@ -3,21 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package Strategies;
+
+import Templates.HotDrinks;
 
 /**
  *
  * @author jwhite12
  */
-public class Cocktail extends Spirits {
+public class Coffee extends HotDrinks {
     
     @Override
-    protected void addSpirit(){
-    System.out.println("Adding Spirit");
+    protected void mixIngredients(){
+        System.out.println("Brew Coffee");
     }
     
     @Override
-    protected void addGarnish(){
-        System.out.println("Adding Garnish");
+    protected void addIngredients() {
+        System.out.println("Adding Milk");
     }
-    
 }

@@ -1,6 +1,6 @@
-package pubsimulation;
+package Templates;
 
-//TEMPLATE METHOD
+//An abstract template class for Hot drinks
 public abstract class HotDrinks {
     
     public final void prepareDrinks() {

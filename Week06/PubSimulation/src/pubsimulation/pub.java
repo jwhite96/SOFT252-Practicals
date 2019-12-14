@@ -9,10 +9,13 @@ package pubsimulation;
  *
  * @author jwhite12
  */
-public class TapDrinks extends ColdDrinks{
+public class pub {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
     
-    @Override
-    protected void makeDrink(){
-        System.out.println("Placing glass under tap");
-    }    
 }

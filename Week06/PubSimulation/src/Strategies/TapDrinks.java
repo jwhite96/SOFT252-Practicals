@@ -3,17 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pubsimulation;
+package Strategies;
+
+import Templates.ColdDrinks;
 
 /**
  *
  * @author jwhite12
  */
-public class BottleDrink extends ColdDrinks {
-    
+public class TapDrinks extends ColdDrinks{
+        
     @Override
     protected void makeDrink(){
-        System.out.println("Opening Bottle");
-    }  
-    
+        System.out.println("Placing glass under tap");
+    }    
 }

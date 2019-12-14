@@ -3,21 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pubsimulation;
+package Strategies;
+
+import Templates.HotDrinks;
 
 /**
  *
  * @author jwhite12
  */
-public class Coffee extends HotDrinks {
+public class Tea extends HotDrinks{
     
     @Override
-    protected void mixIngredients(){
-        System.out.println("Brew Coffee");
-    }
-    
+    protected void mixIngredients() {
+        System.out.println("Adding Tea Bag");
+    }    
+
     @Override
     protected void addIngredients() {
-        System.out.println("Adding Milk");
-    }
+        System.out.println("Adding Lemon");
+    }    
 }

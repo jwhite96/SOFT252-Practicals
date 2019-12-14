@@ -1,4 +1,4 @@
-package pubsimulation;
+package Templates;
 
 
 //TEMPLATE METHOD
