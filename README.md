@@ -1,3 +1,2 @@
-PRACTICAL WORK FOR SOFT252
-
-   AUTHOR JAMES WHITE
+## Practical work for SOFT252
+Software Engineering with Java
